@@ -1,6 +1,223 @@
-body {
+html, body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    height: 100%;
+}
+
+.header {
+    background-color: #bdbdbd;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: left;
+    border: 1px solid #424242;
+}
+
+
+.main-content{
+    padding: 20px;
+    flex: 1;
+}
+
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #bdbdbd;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: left;
+    border: 1px solid #424242;
+}
+
+#card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #424242;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+    box-shadow: #adadad 0px 2px 4px 0px;
+
+}
+
+.card h2 {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card h2:hover {
+    transform: scale(1.05);
+}
+
+
+.likes {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.like-icon {
+    font-size: 18px;
+    transition: color 0.3s, transform 0.2s ease;
+    color: #555;
+}
+
+
+.likes:hover .like-icon {
+    transform: scale(1.2);
+}
+
+.like-icon.liked {
+    color: red;
+}
+
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+/* Modal background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #333;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.close:hover {
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05)
+}
+
+
+.playlist-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.playlist-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.playlist-cover {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.playlist-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playlist-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.creator-name {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #fdfdfd;
+}
+
+.song-thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.song-details {
+  flex-grow: 1;
+}
+
+.song-title {
+  margin: 0;
+  font-weight: bold;
+}
+
+.artist-album {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.song-duration {
+  font-size: 14px;
+  color: #333;
+  margin-left: 10px;
 }

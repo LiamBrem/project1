@@ -1,0 +1,1614 @@
+{
+  "playlists": [
+    {
+      "playlistID": "pl001",
+      "playlist_name": "Chill Vibes",
+      "playlist_author": "Liam",
+      "songs": [
+        {
+          "title": "Dream Bloom",
+          "artist": "Iron Pulse",
+          "album": "Evening Static"
+        },
+        {
+          "title": "Beat Echo",
+          "artist": "Blue Slate",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Sky Pulse",
+          "artist": "Forge",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Horizon Horizon",
+          "artist": "Patchwild",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Loop Focus",
+          "artist": "Aura",
+          "album": "Skylines"
+        },
+        {
+          "title": "Focus Night",
+          "artist": "Forge",
+          "album": "Twilight Tales"
+        },
+        {
+          "title": "Dream Echo",
+          "artist": "Echo Drift",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Loop Light",
+          "artist": "DJ Nova",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Bloom Drift",
+          "artist": "Titan Echo",
+          "album": "Study Light"
+        },
+        {
+          "title": "Drift Drive",
+          "artist": "Willow Sound",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Wave Pulse",
+          "artist": "Mitsu",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Beat Cloud",
+          "artist": "Echo Drift",
+          "album": "Clarity"
+        },
+        {
+          "title": "Fire Drift",
+          "artist": "Titan Echo",
+          "album": "Evening Static"
+        },
+        {
+          "title": "Dream Wave",
+          "artist": "Willow Sound",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Drift Road",
+          "artist": "Nebulae",
+          "album": "Notebook Beats"
+        },
+        {
+          "title": "Pulse Horizon",
+          "artist": "Willow Sound",
+          "album": "Ocean Echoes"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl002",
+      "playlist_name": "Workout Hits",
+      "playlist_author": "FitnessPro",
+      "songs": [
+        {
+          "title": "Focus Pulse",
+          "artist": "DJ Nova",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Night Horizon",
+          "artist": "Iron Pulse",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Dream Bloom",
+          "artist": "Alpha Mind",
+          "album": "Clarity"
+        },
+        {
+          "title": "Fire Drift",
+          "artist": "Titan Echo",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Bloom Horizon",
+          "artist": "Patchwild",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Dream Echo",
+          "artist": "Mitsu",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Light Fire",
+          "artist": "Drift",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Echo Cloud",
+          "artist": "Alpha Mind",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Rain Beat",
+          "artist": "Echo Drift",
+          "album": "Moonlight Ride"
+        },
+        {
+          "title": "Night Cloud",
+          "artist": "Aura",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Sky Pulse",
+          "artist": "Blue Slate",
+          "album": "Evening Static"
+        },
+        {
+          "title": "Fire Fire",
+          "artist": "Luna James",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Echo Rain",
+          "artist": "Nebulae",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Beat Focus",
+          "artist": "Forge",
+          "album": "Moonlight Ride"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl003",
+      "playlist_name": "Focus & Study",
+      "playlist_author": "StudyBuddy",
+      "songs": [
+        {
+          "title": "Drift Horizon",
+          "artist": "Blue Slate",
+          "album": "Silent Math"
+        },
+        {
+          "title": "Loop Dream",
+          "artist": "Sonic Surge",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Loop Focus",
+          "artist": "Echo Drift",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Sunset Loop",
+          "artist": "Flex Nation",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Light Sunset",
+          "artist": "Mitsu",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Drive Road",
+          "artist": "Soft Static",
+          "album": "Clarity"
+        },
+        {
+          "title": "Dream Drive",
+          "artist": "Sonic Surge",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Echo Horizon",
+          "artist": "Patchwild",
+          "album": "Windswept"
+        },
+        {
+          "title": "Drive Pulse",
+          "artist": "DJ Nova",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Cloud Echo",
+          "artist": "Patchwild",
+          "album": "Rush Hour"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl004",
+      "playlist_name": "Road Trip",
+      "playlist_author": "Adventurer101",
+      "songs": [
+        {
+          "title": "Cloud Sky",
+          "artist": "Echo Drift",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Cloud Light",
+          "artist": "Lofi Glow",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Beat Rain",
+          "artist": "Flex Nation",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Fire Drive",
+          "artist": "Soft Static",
+          "album": "Evening Static"
+        },
+        {
+          "title": "Loop Drift",
+          "artist": "Zenon",
+          "album": "Silent Math"
+        },
+        {
+          "title": "Drive Echo",
+          "artist": "Lofi Glow",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Dream Wave",
+          "artist": "Patchwild",
+          "album": "Windswept"
+        },
+        {
+          "title": "Wave Dream",
+          "artist": "Mitsu",
+          "album": "Evening Static"
+        },
+        {
+          "title": "Drift Beat",
+          "artist": "Soft Static",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Road Cloud",
+          "artist": "Titan Echo",
+          "album": "Silent Math"
+        },
+        {
+          "title": "Dream Cloud",
+          "artist": "Forge",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Light Loop",
+          "artist": "Alpha Mind",
+          "album": "Moonlight Ride"
+        },
+        {
+          "title": "Horizon Road",
+          "artist": "Lofi Glow",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Cloud Road",
+          "artist": "Lofi Glow",
+          "album": "Windswept"
+        },
+        {
+          "title": "Sky Bloom",
+          "artist": "Luna James",
+          "album": "Windswept"
+        },
+        {
+          "title": "Beat Beat",
+          "artist": "Luna James",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Cloud Night",
+          "artist": "Luna James",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Horizon Sunset",
+          "artist": "Sonic Surge",
+          "album": "Caf\u00e9 Clicks"
+        },
+        {
+          "title": "Wave Echo",
+          "artist": "Luna James",
+          "album": "Sunset Bloom"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl005",
+      "playlist_name": "Throwback Jams",
+      "playlist_author": "RetroRicky",
+      "songs": [
+        {
+          "title": "Drift Beat",
+          "artist": "Patchwild",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Sunset Wind",
+          "artist": "Aura",
+          "album": "Silent Math"
+        },
+        {
+          "title": "Drive Sky",
+          "artist": "Forge",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Night Night",
+          "artist": "Echo Drift",
+          "album": "Skylines"
+        },
+        {
+          "title": "Wave Rain",
+          "artist": "Mitsu",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Cloud Pulse",
+          "artist": "Patchwild",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Wave Loop",
+          "artist": "Patchwild",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Road Drive",
+          "artist": "Titan Echo",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Cloud Night",
+          "artist": "Lofi Glow",
+          "album": "Evening Static"
+        },
+        {
+          "title": "Fire Drift",
+          "artist": "Forge",
+          "album": "Sweat Sessions"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl006",
+      "playlist_name": "Acoustic Afternoon",
+      "playlist_author": "Hannah Strings",
+      "songs": [
+        {
+          "title": "Horizon Rain",
+          "artist": "Flex Nation",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Wind Drive",
+          "artist": "Drift",
+          "album": "Moonlight Ride"
+        },
+        {
+          "title": "Fire Cloud",
+          "artist": "Titan Echo",
+          "album": "Sunset Bloom"
+        },
+        {
+          "title": "Echo Horizon",
+          "artist": "Forge",
+          "album": "Sunset Bloom"
+        },
+        {
+          "title": "Beat Drift",
+          "artist": "Echo Drift",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Bloom Dream",
+          "artist": "Aura",
+          "album": "Study Light"
+        },
+        {
+          "title": "Rain Wave",
+          "artist": "Titan Echo",
+          "album": "Caf\u00e9 Clicks"
+        },
+        {
+          "title": "Beat Pulse",
+          "artist": "DJ Nova",
+          "album": "Silent Math"
+        },
+        {
+          "title": "Drive Drift",
+          "artist": "Drift",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Echo Sunset",
+          "artist": "Soft Static",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Road Light",
+          "artist": "Aura",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Beat Road",
+          "artist": "Sonic Surge",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Beat Pulse",
+          "artist": "Alpha Mind",
+          "album": "Windswept"
+        },
+        {
+          "title": "Drive Bloom",
+          "artist": "Luna James",
+          "album": "Sunset Bloom"
+        },
+        {
+          "title": "Beat Night",
+          "artist": "Echo Drift",
+          "album": "Twilight Tales"
+        },
+        {
+          "title": "Light Loop",
+          "artist": "Iron Pulse",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Wave Wave",
+          "artist": "Zenon",
+          "album": "Gasoline Hearts"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl007",
+      "playlist_name": "EDM Essentials",
+      "playlist_author": "DJ Nova",
+      "songs": [
+        {
+          "title": "Sunset Cloud",
+          "artist": "Patchwild",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Sky Fire",
+          "artist": "Titan Echo",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Road Night",
+          "artist": "Patchwild",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Wave Rain",
+          "artist": "Flex Nation",
+          "album": "Caf\u00e9 Clicks"
+        },
+        {
+          "title": "Cloud Wave",
+          "artist": "Echo Drift",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Sunset Fire",
+          "artist": "Nebulae",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Beat Road",
+          "artist": "Titan Echo",
+          "album": "Sunset Bloom"
+        },
+        {
+          "title": "Light Horizon",
+          "artist": "Soft Static",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Bloom Echo",
+          "artist": "Patchwild",
+          "album": "Notebook Beats"
+        },
+        {
+          "title": "Pulse Road",
+          "artist": "Sky Drive",
+          "album": "Evening Static"
+        },
+        {
+          "title": "Fire Horizon",
+          "artist": "Titan Echo",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Rain Fire",
+          "artist": "Iron Pulse",
+          "album": "Botanic Bits"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl008",
+      "playlist_name": "Indie Discovery",
+      "playlist_author": "HiddenGems",
+      "songs": [
+        {
+          "title": "Cloud Focus",
+          "artist": "Drift",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Drive Dream",
+          "artist": "Mitsu",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Echo Echo",
+          "artist": "Forge",
+          "album": "Moonlight Ride"
+        },
+        {
+          "title": "Light Sunset",
+          "artist": "Sky Drive",
+          "album": "Moonlight Ride"
+        },
+        {
+          "title": "Wave Focus",
+          "artist": "Alpha Mind",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Beat Light",
+          "artist": "Aura",
+          "album": "Clarity"
+        },
+        {
+          "title": "Dream Fire",
+          "artist": "Lofi Glow",
+          "album": "Clarity"
+        },
+        {
+          "title": "Wave Drive",
+          "artist": "Willow Sound",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Night Cloud",
+          "artist": "Sonic Surge",
+          "album": "Windswept"
+        },
+        {
+          "title": "Fire Light",
+          "artist": "Drift",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Drive Drive",
+          "artist": "Zenon",
+          "album": "Clarity"
+        },
+        {
+          "title": "Road Cloud",
+          "artist": "Mitsu",
+          "album": "Evening Static"
+        },
+        {
+          "title": "Rain Loop",
+          "artist": "DJ Nova",
+          "album": "Skylines"
+        },
+        {
+          "title": "Light Focus",
+          "artist": "Sonic Surge",
+          "album": "Sunset Bloom"
+        },
+        {
+          "title": "Focus Pulse",
+          "artist": "Titan Echo",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Echo Drive",
+          "artist": "Lofi Glow",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Fire Sunset",
+          "artist": "Forge",
+          "album": "Gasoline Hearts"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl009",
+      "playlist_name": "Jazz & Blues",
+      "playlist_author": "BlueNoteJoe",
+      "songs": [
+        {
+          "title": "Night Dream",
+          "artist": "Patchwild",
+          "album": "Sunset Bloom"
+        },
+        {
+          "title": "Sky Loop",
+          "artist": "Iron Pulse",
+          "album": "Skylines"
+        },
+        {
+          "title": "Focus Beat",
+          "artist": "Forge",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Echo Night",
+          "artist": "Flex Nation",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Road Rain",
+          "artist": "Flex Nation",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Pulse Cloud",
+          "artist": "Sky Drive",
+          "album": "Study Light"
+        },
+        {
+          "title": "Loop Echo",
+          "artist": "Zenon",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Bloom Focus",
+          "artist": "Nebulae",
+          "album": "Silent Math"
+        },
+        {
+          "title": "Loop Rain",
+          "artist": "Aura",
+          "album": "Caf\u00e9 Clicks"
+        },
+        {
+          "title": "Horizon Wind",
+          "artist": "Soft Static",
+          "album": "Skylines"
+        },
+        {
+          "title": "Echo Light",
+          "artist": "DJ Nova",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Night Horizon",
+          "artist": "Patchwild",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Pulse Drift",
+          "artist": "Mitsu",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Night Echo",
+          "artist": "Iron Pulse",
+          "album": "Clarity"
+        },
+        {
+          "title": "Drift Drift",
+          "artist": "Nebulae",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Drift Sky",
+          "artist": "DJ Nova",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Pulse Echo",
+          "artist": "Zenon",
+          "album": "Clarity"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl010",
+      "playlist_name": "Party Anthems",
+      "playlist_author": "DJ Pulse",
+      "songs": [
+        {
+          "title": "Dream Pulse",
+          "artist": "Forge",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Night Rain",
+          "artist": "Zenon",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Focus Beat",
+          "artist": "Mitsu",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Light Sky",
+          "artist": "Luna James",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Bloom Loop",
+          "artist": "Titan Echo",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Night Pulse",
+          "artist": "DJ Nova",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Sunset Focus",
+          "artist": "Sonic Surge",
+          "album": "Moonlight Ride"
+        },
+        {
+          "title": "Rain Echo",
+          "artist": "Flex Nation",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Rain Focus",
+          "artist": "Alpha Mind",
+          "album": "Clarity"
+        },
+        {
+          "title": "Light Wind",
+          "artist": "Sonic Surge",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Wave Night",
+          "artist": "Drift",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Beat Bloom",
+          "artist": "Blue Slate",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Wind Cloud",
+          "artist": "Titan Echo",
+          "album": "Clarity"
+        },
+        {
+          "title": "Cloud Focus",
+          "artist": "DJ Nova",
+          "album": "Clarity"
+        },
+        {
+          "title": "Sunset Fire",
+          "artist": "Luna James",
+          "album": "Caf\u00e9 Clicks"
+        },
+        {
+          "title": "Fire Road",
+          "artist": "Blue Slate",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Sunset Fire",
+          "artist": "Sky Drive",
+          "album": "Evening Static"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl011",
+      "playlist_name": "Morning Motivation",
+      "playlist_author": "AM Hustle",
+      "songs": [
+        {
+          "title": "Night Focus",
+          "artist": "Echo Drift",
+          "album": "Caf\u00e9 Clicks"
+        },
+        {
+          "title": "Drive Echo",
+          "artist": "Sonic Surge",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Cloud Loop",
+          "artist": "Titan Echo",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Horizon Bloom",
+          "artist": "Echo Drift",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Drift Echo",
+          "artist": "Patchwild",
+          "album": "Clarity"
+        },
+        {
+          "title": "Fire Bloom",
+          "artist": "Blue Slate",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Dream Fire",
+          "artist": "Alpha Mind",
+          "album": "Twilight Tales"
+        },
+        {
+          "title": "Light Road",
+          "artist": "Blue Slate",
+          "album": "Windswept"
+        },
+        {
+          "title": "Pulse Loop",
+          "artist": "Titan Echo",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Dream Echo",
+          "artist": "Nebulae",
+          "album": "Twilight Tales"
+        },
+        {
+          "title": "Beat Loop",
+          "artist": "Titan Echo",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Wave Sky",
+          "artist": "Aura",
+          "album": "Notebook Beats"
+        },
+        {
+          "title": "Rain Dream",
+          "artist": "Sky Drive",
+          "album": "Twilight Tales"
+        },
+        {
+          "title": "Horizon Light",
+          "artist": "Mitsu",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Light Beat",
+          "artist": "Titan Echo",
+          "album": "Windswept"
+        },
+        {
+          "title": "Road Wind",
+          "artist": "Blue Slate",
+          "album": "Skylines"
+        },
+        {
+          "title": "Rain Night",
+          "artist": "Sonic Surge",
+          "album": "Ocean Echoes"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl012",
+      "playlist_name": "Late Night Lofi",
+      "playlist_author": "Lo-fi Leah",
+      "songs": [
+        {
+          "title": "Sunset Echo",
+          "artist": "Iron Pulse",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Echo Sunset",
+          "artist": "Nebulae",
+          "album": "Caf\u00e9 Clicks"
+        },
+        {
+          "title": "Rain Focus",
+          "artist": "Echo Drift",
+          "album": "Twilight Tales"
+        },
+        {
+          "title": "Beat Drive",
+          "artist": "Aura",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Sunset Sunset",
+          "artist": "Aura",
+          "album": "Notebook Beats"
+        },
+        {
+          "title": "Wave Night",
+          "artist": "Patchwild",
+          "album": "Clarity"
+        },
+        {
+          "title": "Focus Road",
+          "artist": "Forge",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Fire Wind",
+          "artist": "Soft Static",
+          "album": "Twilight Tales"
+        },
+        {
+          "title": "Night Road",
+          "artist": "DJ Nova",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Loop Cloud",
+          "artist": "Titan Echo",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Echo Fire",
+          "artist": "Sky Drive",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Wave Fire",
+          "artist": "Willow Sound",
+          "album": "Skylines"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl013",
+      "playlist_name": "Summer Heat",
+      "playlist_author": "SunsetSam",
+      "songs": [
+        {
+          "title": "Road Drift",
+          "artist": "Luna James",
+          "album": "Windswept"
+        },
+        {
+          "title": "Drift Drive",
+          "artist": "Patchwild",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Drift Fire",
+          "artist": "Iron Pulse",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Wind Drive",
+          "artist": "Sky Drive",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Echo Sunset",
+          "artist": "Patchwild",
+          "album": "Twilight Tales"
+        },
+        {
+          "title": "Pulse Dream",
+          "artist": "Sonic Surge",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Wind Dream",
+          "artist": "DJ Nova",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Bloom Cloud",
+          "artist": "Alpha Mind",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Dream Dream",
+          "artist": "Echo Drift",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Wind Beat",
+          "artist": "Lofi Glow",
+          "album": "Clarity"
+        },
+        {
+          "title": "Dream Night",
+          "artist": "Aura",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Cloud Wind",
+          "artist": "Sonic Surge",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Bloom Echo",
+          "artist": "Blue Slate",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Loop Bloom",
+          "artist": "Alpha Mind",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Beat Bloom",
+          "artist": "Luna James",
+          "album": "Frameworks"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl014",
+      "playlist_name": "Dark Academia",
+      "playlist_author": "TheArchivist",
+      "songs": [
+        {
+          "title": "Dream Road",
+          "artist": "Luna James",
+          "album": "Notebook Beats"
+        },
+        {
+          "title": "Drift Bloom",
+          "artist": "DJ Nova",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Fire Dream",
+          "artist": "Patchwild",
+          "album": "Skylines"
+        },
+        {
+          "title": "Wave Loop",
+          "artist": "Sonic Surge",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Sunset Light",
+          "artist": "Echo Drift",
+          "album": "Clarity"
+        },
+        {
+          "title": "Bloom Drift",
+          "artist": "Blue Slate",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Dream Sky",
+          "artist": "Nebulae",
+          "album": "Skylines"
+        },
+        {
+          "title": "Bloom Drift",
+          "artist": "Nebulae",
+          "album": "Moonlight Ride"
+        },
+        {
+          "title": "Drive Bloom",
+          "artist": "Blue Slate",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Horizon Cloud",
+          "artist": "Lofi Glow",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Loop Fire",
+          "artist": "Iron Pulse",
+          "album": "Clarity"
+        },
+        {
+          "title": "Pulse Sky",
+          "artist": "Lofi Glow",
+          "album": "Study Light"
+        },
+        {
+          "title": "Beat Road",
+          "artist": "Alpha Mind",
+          "album": "Moonlight Ride"
+        },
+        {
+          "title": "Road Pulse",
+          "artist": "Sky Drive",
+          "album": "Clarity"
+        },
+        {
+          "title": "Drift Pulse",
+          "artist": "Echo Drift",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Sunset Wind",
+          "artist": "Patchwild",
+          "album": "Evening Static"
+        },
+        {
+          "title": "Drive Drift",
+          "artist": "Soft Static",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Beat Night",
+          "artist": "Alpha Mind",
+          "album": "Moonlight Ride"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl015",
+      "playlist_name": "Gaming OST Mix",
+      "playlist_author": "XPBoost",
+      "songs": [
+        {
+          "title": "Sunset Wave",
+          "artist": "Nebulae",
+          "album": "Silent Math"
+        },
+        {
+          "title": "Drive Rain",
+          "artist": "Soft Static",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Fire Sky",
+          "artist": "Soft Static",
+          "album": "Study Light"
+        },
+        {
+          "title": "Cloud Horizon",
+          "artist": "Soft Static",
+          "album": "Skylines"
+        },
+        {
+          "title": "Wind Wave",
+          "artist": "Echo Drift",
+          "album": "Study Light"
+        },
+        {
+          "title": "Beat Drive",
+          "artist": "Drift",
+          "album": "Caf\u00e9 Clicks"
+        },
+        {
+          "title": "Echo Light",
+          "artist": "Mitsu",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Loop Echo",
+          "artist": "Luna James",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Light Rain",
+          "artist": "Nebulae",
+          "album": "Moonlight Ride"
+        },
+        {
+          "title": "Horizon Drift",
+          "artist": "Lofi Glow",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Pulse Loop",
+          "artist": "Titan Echo",
+          "album": "Moonlight Ride"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl016",
+      "playlist_name": "Relax & Meditate",
+      "playlist_author": "InnerPeace",
+      "songs": [
+        {
+          "title": "Drift Pulse",
+          "artist": "DJ Nova",
+          "album": "Notebook Beats"
+        },
+        {
+          "title": "Light Echo",
+          "artist": "Forge",
+          "album": "Caf\u00e9 Clicks"
+        },
+        {
+          "title": "Wind Night",
+          "artist": "Zenon",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Drive Sunset",
+          "artist": "Mitsu",
+          "album": "Study Light"
+        },
+        {
+          "title": "Sunset Wave",
+          "artist": "Iron Pulse",
+          "album": "Silent Math"
+        },
+        {
+          "title": "Road Pulse",
+          "artist": "Iron Pulse",
+          "album": "Twilight Tales"
+        },
+        {
+          "title": "Loop Sunset",
+          "artist": "Nebulae",
+          "album": "Asphalt Dreams"
+        },
+        {
+          "title": "Night Bloom",
+          "artist": "Sky Drive",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Cloud Night",
+          "artist": "Iron Pulse",
+          "album": "Skylines"
+        },
+        {
+          "title": "Road Sunset",
+          "artist": "Nebulae",
+          "album": "Silent Math"
+        },
+        {
+          "title": "Rain Sky",
+          "artist": "Alpha Mind",
+          "album": "Frameworks"
+        },
+        {
+          "title": "Sky Dream",
+          "artist": "Willow Sound",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Cloud Focus",
+          "artist": "Aura",
+          "album": "Study Light"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl017",
+      "playlist_name": "Hip Hop Bangers",
+      "playlist_author": "BeatKing",
+      "songs": [
+        {
+          "title": "Drive Loop",
+          "artist": "Titan Echo",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Drift Loop",
+          "artist": "Blue Slate",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Road Road",
+          "artist": "Forge",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Rain Drive",
+          "artist": "Willow Sound",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Beat Road",
+          "artist": "Alpha Mind",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Wind Echo",
+          "artist": "Patchwild",
+          "album": "Skylines"
+        },
+        {
+          "title": "Light Echo",
+          "artist": "Soft Static",
+          "album": "Skylines"
+        },
+        {
+          "title": "Drive Road",
+          "artist": "Blue Slate",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Horizon Sunset",
+          "artist": "Willow Sound",
+          "album": "Clarity"
+        },
+        {
+          "title": "Drive Wind",
+          "artist": "Lofi Glow",
+          "album": "Windswept"
+        },
+        {
+          "title": "Rain Wave",
+          "artist": "Sonic Surge",
+          "album": "Notebook Beats"
+        },
+        {
+          "title": "Horizon Wave",
+          "artist": "Titan Echo",
+          "album": "Notebook Beats"
+        },
+        {
+          "title": "Dream Drive",
+          "artist": "Lofi Glow",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Dream Light",
+          "artist": "Drift",
+          "album": "Alpha Grind"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl018",
+      "playlist_name": "Cinematic Scores",
+      "playlist_author": "FilmCore",
+      "songs": [
+        {
+          "title": "Drive Sky",
+          "artist": "Nebulae",
+          "album": "Silent Math"
+        },
+        {
+          "title": "Bloom Road",
+          "artist": "Willow Sound",
+          "album": "Caf\u00e9 Clicks"
+        },
+        {
+          "title": "Bloom Night",
+          "artist": "Mitsu",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Horizon Loop",
+          "artist": "Alpha Mind",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Pulse Dream",
+          "artist": "Aura",
+          "album": "Evening Static"
+        },
+        {
+          "title": "Wave Dream",
+          "artist": "Mitsu",
+          "album": "Moonlight Ride"
+        },
+        {
+          "title": "Light Beat",
+          "artist": "Drift",
+          "album": "Skylines"
+        },
+        {
+          "title": "Fire Road",
+          "artist": "Sky Drive",
+          "album": "Sunset Bloom"
+        },
+        {
+          "title": "Fire Fire",
+          "artist": "Alpha Mind",
+          "album": "Sunset Bloom"
+        },
+        {
+          "title": "Night Pulse",
+          "artist": "Soft Static",
+          "album": "Ocean Echoes"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl019",
+      "playlist_name": "Folk & Americana",
+      "playlist_author": "RusticRider",
+      "songs": [
+        {
+          "title": "Focus Fire",
+          "artist": "Willow Sound",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Drift Wind",
+          "artist": "Echo Drift",
+          "album": "Clarity"
+        },
+        {
+          "title": "Wind Rain",
+          "artist": "Willow Sound",
+          "album": "Clarity"
+        },
+        {
+          "title": "Fire Cloud",
+          "artist": "Nebulae",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Cloud Loop",
+          "artist": "Mitsu",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Light Focus",
+          "artist": "Echo Drift",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Pulse Cloud",
+          "artist": "Willow Sound",
+          "album": "Twilight Tales"
+        },
+        {
+          "title": "Beat Wind",
+          "artist": "Blue Slate",
+          "album": "Notebook Beats"
+        },
+        {
+          "title": "Road Fire",
+          "artist": "Sky Drive",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Wind Dream",
+          "artist": "Aura",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Fire Drive",
+          "artist": "Patchwild",
+          "album": "Twilight Tales"
+        },
+        {
+          "title": "Dream Road",
+          "artist": "Aura",
+          "album": "Alpha Grind"
+        },
+        {
+          "title": "Drive Wave",
+          "artist": "Nebulae",
+          "album": "Clarity"
+        },
+        {
+          "title": "Drift Rain",
+          "artist": "DJ Nova",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Echo Echo",
+          "artist": "Zenon",
+          "album": "Saguaro Trails"
+        },
+        {
+          "title": "Drift Dream",
+          "artist": "Alpha Mind",
+          "album": "Gasoline Hearts"
+        },
+        {
+          "title": "Pulse Beat",
+          "artist": "Drift",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Night Drift",
+          "artist": "Iron Pulse",
+          "album": "Ocean Echoes"
+        },
+        {
+          "title": "Pulse Focus",
+          "artist": "Sky Drive",
+          "album": "Skylines"
+        },
+        {
+          "title": "Echo Horizon",
+          "artist": "Lofi Glow",
+          "album": "Twilight Tales"
+        }
+      ]
+    },
+    {
+      "playlistID": "pl020",
+      "playlist_name": "Instrumental Focus",
+      "playlist_author": "PureSound",
+      "songs": [
+        {
+          "title": "Road Fire",
+          "artist": "Soft Static",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Drift Echo",
+          "artist": "Luna James",
+          "album": "Skylines"
+        },
+        {
+          "title": "Loop Loop",
+          "artist": "Titan Echo",
+          "album": "Moonlight Ride"
+        },
+        {
+          "title": "Wind Dream",
+          "artist": "Alpha Mind",
+          "album": "Notebook Beats"
+        },
+        {
+          "title": "Fire Wave",
+          "artist": "Blue Slate",
+          "album": "Sweat Sessions"
+        },
+        {
+          "title": "Cloud Sunset",
+          "artist": "Soft Static",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Horizon Drift",
+          "artist": "Lofi Glow",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Horizon Echo",
+          "artist": "Lofi Glow",
+          "album": "Botanic Bits"
+        },
+        {
+          "title": "Beat Fire",
+          "artist": "Sonic Surge",
+          "album": "Rush Hour"
+        },
+        {
+          "title": "Loop Focus",
+          "artist": "Sky Drive",
+          "album": "Silent Math"
+        },
+        {
+          "title": "Rain Focus",
+          "artist": "Nebulae",
+          "album": "Study Light"
+        },
+        {
+          "title": "Bloom Drive",
+          "artist": "Iron Pulse",
+          "album": "Skylines"
+        },
+        {
+          "title": "Light Light",
+          "artist": "Echo Drift",
+          "album": "Evening Static"
+        },
+        {
+          "title": "Fire Pulse",
+          "artist": "Titan Echo",
+          "album": "Caf\u00e9 Clicks"
+        },
+        {
+          "title": "Loop Bloom",
+          "artist": "Patchwild",
+          "album": "Frameworks"
+        }
+      ]
+    }
+  ]
+}

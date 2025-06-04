@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Music Playlist Explorer</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
         <!-- Your header content here -->
-    </header>
+        <h1>Music Playlist Explorer</h1>
+      </header>
 
-    <main> 
+      <main class="main-content">
         <!-- Your main content here -->
-    </main>
+        <div id="card-container">
+          <div class="card">
+            <img
+              src="assets/img/playlist.png"
+              alt="Playlist Icon"
+              class="card-icon"
+            />
+            <div onclick="openModal({name: 'Playlist Title', imageUrl: 'assets/img/song.png', creatorName: 'Creator Name', songs: {}})">
+                <h2>Playlist Title</h2>
+            </div>
+    
+            <p>Creator Name</p>
+            <div class="likes" onClick="">
+              <i class="fa-regular fa-heart like-icon"></i>
+              <span class="like-count">123</span>
+            </div>
+          </div>
+        </div>
+      </main>
 
-    <footer>
+      <footer class="footer">
         <!-- Your footer content here -->
-    </footer>
-    <script src="data/data.js"></script>
+      </footer>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="PlaylistModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 id="PlaylistTitle"></h1>
+        <img id="PlaylistImage" src="" alt="Playlist Image" />
+        <p id="CreatorName"></p>
+        <p id="Songs"></p>
+      </div>
+    </div>
+
+    <script src="data/data.js"></script> 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
