@@ -1,56 +1,64 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const container = document.getElementById("featured-container-right");
+  const container = document.getElementById("featured-container-right");
 
-    fetch("data/data.json")
-        .then((response) => response.json())
-        .then((data) => {
+  fetch("data/data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const playlists = data.playlists;
+      const playlist = playlists[Math.floor(Math.random() * playlists.length)];
+      const title = document.getElementById("featured-title");
+      title.textContent = playlist.playlist_name;
+      if (playlist.length === 0) {
+        container.innerHTML = "<p>No songs available.</p>";
+        return;
+      }
 
-            
+      // display cards for each song
+      container.innerHTML = "";
+      playlist.songs.forEach((song) => {
+        const card = document.createElement("div");
+        card.className = "song-card";
 
-            const playlists = data.playlists;
-            const playlist = playlists[Math.floor(Math.random() * playlists.length)];
-            const title = document.getElementById("featured-title");
-            title.textContent = playlist.playlist_name;
-            if (playlist.length === 0) {
-                container.innerHTML = "<p>No songs available.</p>";
-                return;
-            }
+        // Image
+        const img = document.createElement("img");
+        img.src =
+          "https://picsum.photos/100/100?random=" +
+          Math.floor(Math.random() * 1000);
+        img.alt = "Song Icon";
+        img.className = "card-icon";
 
-            // display cards for each song
-            container.innerHTML = "";
-            playlist.songs.forEach((song) => {
-                const card = document.createElement("div");
-                card.className = "card";
+        // Text Container
+        const textContainer = document.createElement("div");
+        textContainer.className = "song-info";
 
-                const img = document.createElement("img");
-                img.src = "?random=" + Math.floor(Math.random() * 1000);
-                img.alt = "Song Icon";
-                img.className = "card-icon";
+        // Title
+        const title = document.createElement("div");
+        title.className = "song-title";
+        title.textContent = song.title;
 
-                const titleWrapper = document.createElement("div");
-                titleWrapper.onclick = () =>
-                    openModal({
-                        name: song.song_name,
-                        imageUrl: img.src,
-                        creatorName: song.song_author,
-                        songs: playlist.songs,
-                    });
+        // Artist
+        const artist = document.createElement("div");
+        artist.className = "song-artist";
+        artist.textContent = song.artist;
 
-                const title = document.createElement("h2");
-                title.textContent = song.song_name;
-                titleWrapper.appendChild(title);
+        // Album 
+        const album = document.createElement("div");
+        album.className = "song-album";
+        album.textContent = song.album || "Unknown Album";
 
-                const author = document.createElement("p");
-                author.textContent = song.song_author;
+        // Duration
+        const duration = document.createElement("div");
+        duration.className = "song-duration";
+        duration.textContent = song.duration || "0:00";
 
-                card.appendChild(img);
-                card.appendChild(titleWrapper);
-                card.appendChild(author);
-                
-                container.appendChild(card);
-            });
+        textContainer.appendChild(title);
+        textContainer.appendChild(artist);
+        textContainer.appendChild(album);
+        textContainer.appendChild(duration);
 
-
-        })
-
+        card.appendChild(img);
+        card.appendChild(textContainer);
+        container.appendChild(card);
+      });
+    });
 });

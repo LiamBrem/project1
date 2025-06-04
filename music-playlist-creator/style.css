@@ -55,7 +55,6 @@ html, body {
 
 .card {
     background-color: #ffffff;
-    border: 1px solid #424242;
     border-radius: 8px;
     padding: 15px;
     width: calc(33.333% - 20px);
@@ -177,3 +176,55 @@ html, body {
     gap: 20px;
 }
 
+
+#featured-container-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.song-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 400px;
+  box-shadow: #424242 0px 2px 4px 0px;
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+
+.card-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.song-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.song-artist,
+.song-album {
+  font-size: 14px;
+  color: #666;
+}
+
+.song-duration {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #333;
+}
