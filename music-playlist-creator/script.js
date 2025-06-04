@@ -1,5 +1,34 @@
-// Like counts
+
+// Modal
+const span = document.getElementsByClassName("close")[0];
+const modal = document.getElementById("PlaylistModal");
+
+
+function openModal(playlist) {
+  const modal = document.getElementById("PlaylistModal");
+  document.getElementById("PlaylistTitle").textContent = playlist.name;
+  document.getElementById("PlaylistImage").src = playlist.imageUrl;
+  document.getElementById("CreatorName").textContent = `By ${playlist.creatorName}`;
+  document.getElementById("Songs").innerHTML =
+    "<strong>Songs:</strong><br><ul>" +
+    playlist.songs
+      .map((song) => `<li>${song.title} - ${song.artist} (${song.album})</li>`)
+      .join("") +
+    "</ul>";
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+   modal.style.display = "none";
+}
+window.onclick = function(event) {
+   if (event.target == modal) {
+      modal.style.display = "none";
+   }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  // Like functionality
   document.querySelectorAll(".likes").forEach((likeSection) => {
     likeSection.addEventListener("click", () => {
       const icon = likeSection.querySelector(".like-icon");
@@ -17,30 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-});
 
-// Modal
-const modal = document.getElementById("PlaylistModal");
-const span = document.getElementsByClassName("close")[0];
 
-function openModal(playlist) {
-  document.getElementById("PlaylistTitle").innerText = playlist.name;
-  document.getElementById("PlaylistImage").src = playlist.imageUrl;
-  document.getElementById("CreatorName").innerText = playlist.creatorName;
-  modal.style.display = "block";
-}
-
-span.onclick = function () {
-  modal.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-
-// Playlist data
-document.addEventListener("DOMContentLoaded", () => {
+  // Fetch playlists and display cards
   const container = document.getElementById("card-container");
 
   fetch("data/data.json")
@@ -67,12 +75,13 @@ document.addEventListener("DOMContentLoaded", () => {
         img.className = "card-icon";
 
         const titleWrapper = document.createElement("div");
-        titleWrapper.onclick = () => openModal({
-          name: playlist.playlist_name,
-          imageUrl: img.src,
-          creatorName: playlist.playlist_author,
-          songs: playlist.songs
-        });
+        titleWrapper.onclick = () =>
+          openModal({
+            name: playlist.playlist_name,
+            imageUrl: img.src,
+            creatorName: playlist.playlist_author,
+            songs: playlist.songs,
+          });
 
         const title = document.createElement("h2");
         title.textContent = playlist.playlist_name;
@@ -102,12 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         card.appendChild(img);
-        card.appendChild(title);
+        card.appendChild(titleWrapper);
         card.appendChild(author);
         card.appendChild(likeDiv);
 
         container.appendChild(card);
-
       });
     });
 });
