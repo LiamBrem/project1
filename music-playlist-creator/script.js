@@ -69,6 +69,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
+  // hides cards not matching the search
+  const searchInput = document.getElementById("search");
+
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    const cards = document.querySelectorAll("#card-container .card");
+
+    cards.forEach((card) => {
+      const title = card.querySelector("h2").textContent.toLowerCase();
+      const matches = title.includes(query);
+
+      card.style.display = matches ? "block" : "none";
+    });
+  });
+
   // Fetch playlists and display cards
   const container = document.getElementById("card-container");
 
@@ -90,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const img = document.createElement("img");
         img.src =
-          "https://picsum.photos/200/200?random=" +
+          "https://picsum.photos/300/300?random=" +
           Math.floor(Math.random() * 1000);
         img.alt = "Playlist Icon";
         img.className = "card-icon";
