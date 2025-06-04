@@ -11,24 +11,24 @@ function openModal(playlist) {
     "CreatorName"
   ).textContent = `By ${playlist.creatorName}`;
 
-  document.getElementById("Songs").innerHTML =
-    "<br><ul>" +
-    playlist.songs
-      .map((song) => `<li>${song.title} - ${song.artist} (${song.album})</li>`)
-      .join("") +
-    "</ul>";
+  displaySongs(playlist.songs);
+
+  function displaySongs(songs) {
+    document.getElementById("Songs").innerHTML =
+      "<br><ul>" +
+      songs
+        .map(
+          (song) => `<li>${song.title} - ${song.artist} (${song.album}) - Duration: ${song.duration}</li>`
+        )
+        .join("") +
+      "</ul>";
+  }
+
   modal.style.display = "block";
 
   shuffleButton.onclick = () => {
     playlist.songs = shuffleList(playlist.songs);
-    document.getElementById("Songs").innerHTML =
-      "<br><ul>" +
-      playlist.songs
-        .map(
-          (song) => `<li>${song.title} - ${song.artist} (${song.album})</li>`
-        )
-        .join("") +
-      "</ul>";
+    displaySongs(playlist.songs);
   };
 }
 
