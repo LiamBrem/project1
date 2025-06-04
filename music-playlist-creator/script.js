@@ -1,30 +1,52 @@
-
 // Modal
 const span = document.getElementsByClassName("close")[0];
 const modal = document.getElementById("PlaylistModal");
-
+const shuffleButton = document.getElementById("shuffle");
 
 function openModal(playlist) {
   const modal = document.getElementById("PlaylistModal");
   document.getElementById("PlaylistTitle").textContent = playlist.name;
   document.getElementById("PlaylistImage").src = playlist.imageUrl;
-  document.getElementById("CreatorName").textContent = `By ${playlist.creatorName}`;
+  document.getElementById(
+    "CreatorName"
+  ).textContent = `By ${playlist.creatorName}`;
+
   document.getElementById("Songs").innerHTML =
-    "<strong>Songs:</strong><br><ul>" +
+    "<br><ul>" +
     playlist.songs
       .map((song) => `<li>${song.title} - ${song.artist} (${song.album})</li>`)
       .join("") +
     "</ul>";
   modal.style.display = "block";
+
+  shuffleButton.onclick = () => {
+    playlist.songs = shuffleList(playlist.songs);
+    document.getElementById("Songs").innerHTML =
+      "<br><ul>" +
+      playlist.songs
+        .map(
+          (song) => `<li>${song.title} - ${song.artist} (${song.album})</li>`
+        )
+        .join("") +
+      "</ul>";
+  };
 }
 
-span.onclick = function() {
-   modal.style.display = "none";
-}
-window.onclick = function(event) {
-   if (event.target == modal) {
-      modal.style.display = "none";
-   }
+span.onclick = function () {
+  modal.style.display = "none";
+};
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+function shuffleList(list) {
+  for (let i = list.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [list[i], list[j]] = [list[j], list[i]];
+  }
+  return list;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -46,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
 
   // Fetch playlists and display cards
   const container = document.getElementById("card-container");

@@ -141,83 +141,18 @@ html, body {
 }
 
 
-.playlist-modal {
+.modal {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.playlist-header {
+.modal-header {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.playlist-cover {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.playlist-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.playlist-title {
-  margin: 0;
-  font-size: 24px;
-}
-
-.creator-name {
-  margin: 5px 0 0;
-  font-size: 16px;
-  color: #666;
-}
-
-.song-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.song-item {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px;
-  background-color: #fdfdfd;
-}
-
-.song-thumb {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-right: 15px;
-}
-
-.song-details {
-  flex-grow: 1;
-}
-
-.song-title {
-  margin: 0;
-  font-weight: bold;
-}
-
-.artist-album {
-  margin: 4px 0 0;
-  font-size: 14px;
-  color: #555;
-}
-
-.song-duration {
-  font-size: 14px;
-  color: #333;
-  margin-left: 10px;
+.modal-row {
+    display: flex;
 }

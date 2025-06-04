@@ -22,10 +22,7 @@
 
       <main class="main-content">
         <!-- Your main content here -->
-        <div id="card-container">
-          
-          </div>
-        </div>
+        <div id="card-container"></div>
       </main>
 
       <footer class="footer">
@@ -37,10 +34,18 @@
     <div id="PlaylistModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h1 id="PlaylistTitle"></h1>
-        <img id="PlaylistImage" src="" alt="Playlist Image" />
-        <p id="CreatorName"></p>
-        <p id="Songs"></p>
+        <div class="modal-header">
+          <img id="PlaylistImage" src="" alt="Playlist Image" />
+          <div class="modal-header-left">
+                <h1 id="PlaylistTitle"></h1>
+                <p id="CreatorName"></p>
+            </div>
+        </div>
+        <div class="modal-row">
+            <h2>Songs:</h2>
+            <button id="shuffle">Shuffle</button>
+        </div>
+        <div id="Songs"></div>
       </div>
     </div>
 
