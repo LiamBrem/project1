@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const playlists = data.playlists;
       const playlist = playlists[Math.floor(Math.random() * playlists.length)];
       const title = document.getElementById("featured-title");
+      const author = document.getElementById("featured-author");
       title.textContent = playlist.playlist_name;
+      author.textContent = playlist.playlist_author;
       if (playlist.length === 0) {
         container.innerHTML = "<p>No songs available.</p>";
         return;

@@ -235,6 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const title = document.getElementById("playlist-title").value.trim();
         const author = document.getElementById("playlist-author").value.trim();
+        const image = document.getElementById("image-url").value.trim();
 
         if (!title || !author) return;
 

@@ -1,6 +1,6 @@
 /* Global Styles */
 button {
-  background-color: #535353; /* Green */
+  background-color: #535353;
   border: none;
   color: white;
   padding: 10px 15px;
@@ -15,7 +15,7 @@ button {
 }
 
 button:hover {
-  background-color: #424242; /* Darker green */
+  background-color: #424242; 
   transform: scale(1.05);
 }
 
@@ -190,7 +190,6 @@ body {
   transition: opacity 0.3s ease;
 }
 
-/* Modal content box */
 .modal-content {
   background-color: #fff;
   margin: 10% auto;
@@ -202,7 +201,6 @@ body {
   position: relative;
 }
 
-/* Close button */
 .close {
   color: #aaa;
   float: right;
@@ -306,7 +304,7 @@ body {
 }
 
 
-/* Responsive Tweaks */
+/* responsiveness */
 @media (max-width: 768px) {
   .modal-header {
     flex-direction: column;
