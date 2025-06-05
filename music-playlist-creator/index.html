@@ -19,15 +19,30 @@
         <!-- Your header content here -->
         <h1>Music Playlist Explorer</h1>
 
-        <div class = "right-nav">
-            <a href="featured.html" >Featured</a>
-            <a href="index.html" >All</a>
+        <div class="right-nav">
+          <a href="featured.html">Featured</a>
+          <a href="index.html">All</a>
         </div>
-        
       </header>
 
       <main class="main-content">
-        <input id="search" type="text" placeholder="Search..">
+        <div class="second-row">
+          <div class="search-container">
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Search... (Name or Author)"
+            />
+            <button id="search-button">Search</button>
+            <button id="clear-button">clear</button>
+          </div>
+          <select name="sort" id="sort">
+            <option value="default">Default</option>
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="date">Duration</option>
+          </select>
+        </div>
         <!-- Your main content here -->
         <div id="card-container"></div>
       </main>
@@ -44,13 +59,13 @@
         <div class="modal-header">
           <img id="PlaylistImage" src="" alt="Playlist Image" />
           <div class="modal-header-left">
-                <h1 id="PlaylistTitle"></h1>
-                <p id="CreatorName"></p>
-            </div>
+            <h1 id="PlaylistTitle"></h1>
+            <p id="CreatorName"></p>
+          </div>
         </div>
         <div class="modal-row">
-            <h2>Songs:</h2>
-            <button id="shuffle">Shuffle</button>
+          <h2>Songs:</h2>
+          <button id="shuffle">Shuffle</button>
         </div>
         <div id="Songs"></div>
       </div>

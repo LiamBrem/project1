@@ -1,3 +1,24 @@
+/* Global Styles */
+button {
+  background-color: #535353; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #424242; /* Darker green */
+  transform: scale(1.05);
+}
+
+
 html,
 body {
   font-family: "Arial", sans-serif;
@@ -9,13 +30,23 @@ body {
 
 #search {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   padding: 5px;
   margin: 10px 0;
   border-radius: 4px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
+  font-size: 16px
+}
+
+.search-container{
+  display: flex;
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header {
@@ -73,14 +104,11 @@ body {
   transition: transform 0.2s;
   box-shadow: #adadad 0px 2px 4px 0px;
   height: 35vh;
-}
-
-.card h2 {
+  transition: transform 0.2s ease;
   cursor: pointer;
-  transition: transform 0.2s;
 }
 
-.card h2:hover {
+.card:hover {
   transform: scale(1.05);
 }
 
@@ -173,7 +201,11 @@ body {
 
 .modal-row {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+
 
 /* FEATURED */
 
@@ -237,4 +269,33 @@ body {
   font-size: 13px;
   margin-top: 5px;
   color: #333;
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .modal-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .song-card {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .header, .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-nav {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }

@@ -1,44 +1,35 @@
-// Modal
-const span = document.getElementsByClassName("close")[0];
+// ──────────────── Modal Setup ──────────────── //
 const modal = document.getElementById("PlaylistModal");
+const span = document.getElementsByClassName("close")[0];
 const shuffleButton = document.getElementById("shuffle");
 
 function openModal(playlist) {
-  const modal = document.getElementById("PlaylistModal");
   document.getElementById("PlaylistTitle").textContent = playlist.name;
   document.getElementById("PlaylistImage").src = playlist.imageUrl;
-  document.getElementById(
-    "CreatorName"
-  ).textContent = `By ${playlist.creatorName}`;
+  document.getElementById("CreatorName").textContent = `By ${playlist.creatorName}`;
 
-  displaySongs(playlist.songs);
-
-  function displaySongs(songs) {
+  const displaySongs = (songs) => {
     document.getElementById("Songs").innerHTML =
       "<br><ul>" +
-      songs
-        .map(
-          (song) => `<li>${song.title} - ${song.artist} (${song.album}) - Duration: ${song.duration}</li>`
-        )
-        .join("") +
+      songs.map(song =>
+        `<li>${song.title} - ${song.artist} (${song.album}) - Duration: ${song.duration}</li>`
+      ).join("") +
       "</ul>";
-  }
+  };
 
-  modal.style.display = "block";
+  displaySongs(playlist.songs);
 
   shuffleButton.onclick = () => {
     playlist.songs = shuffleList(playlist.songs);
     displaySongs(playlist.songs);
   };
+
+  modal.style.display = "block";
 }
 
-span.onclick = function () {
-  modal.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+span.onclick = () => modal.style.display = "none";
+window.onclick = (e) => {
+  if (e.target === modal) modal.style.display = "none";
 };
 
 function shuffleList(list) {
@@ -49,10 +40,13 @@ function shuffleList(list) {
   return list;
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Like functionality
+
+  // Like Button
   document.querySelectorAll(".likes").forEach((likeSection) => {
-    likeSection.addEventListener("click", () => {
+    likeSection.addEventListener("click", (e) => {
+      e.stopPropagation();
       const icon = likeSection.querySelector(".like-icon");
       const countSpan = likeSection.querySelector(".like-count");
       let count = parseInt(countSpan.textContent);
@@ -69,57 +63,54 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Search
+  const searchInput = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+  const clearSearchButton = document.getElementById("clear-button");
 
-  // hides cards not matching the search
-  const searchInput = document.getElementById("search");
-
-  searchInput.addEventListener("input", () => {
+  function performSearch() {
     const query = searchInput.value.toLowerCase();
     const cards = document.querySelectorAll("#card-container .card");
 
     cards.forEach((card) => {
       const title = card.querySelector("h2").textContent.toLowerCase();
-      const matches = title.includes(query);
-
+      const author = card.querySelector("p").textContent.toLowerCase();
+      const matches = title.includes(query) || author.includes(query);
       card.style.display = matches ? "block" : "none";
+    });
+  }
+
+  searchButton.addEventListener("click", performSearch);
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") performSearch();
+  });
+
+  clearSearchButton.addEventListener("click", () => {
+    searchInput.value = "";
+    document.querySelectorAll("#card-container .card").forEach(card => {
+      card.style.display = "block";
     });
   });
 
-  // Fetch playlists and display cards
+  // Loading Cards
   const container = document.getElementById("card-container");
 
   fetch("data/data.json")
-    .then((response) => response.json())
+    .then((res) => res.json())
     .then((data) => {
       const playlists = data.playlists;
-
-      container.innerHTML = "";
-
-      if (playlists.length === 0) {
-        container.innerHTML = "<p>No playlists available.</p>";
-        return;
-      }
+      container.innerHTML = playlists.length ? "" : "<p>No playlists available.</p>";
 
       playlists.forEach((playlist) => {
         const card = document.createElement("div");
         card.className = "card";
 
         const img = document.createElement("img");
-        img.src =
-          "https://picsum.photos/300/300?random=" +
-          Math.floor(Math.random() * 1000);
+        img.src = `https://picsum.photos/300/300?random=${Math.floor(Math.random() * 1000)}`;
         img.alt = "Playlist Icon";
         img.className = "card-icon";
 
         const titleWrapper = document.createElement("div");
-        titleWrapper.onclick = () =>
-          openModal({
-            name: playlist.playlist_name,
-            imageUrl: img.src,
-            creatorName: playlist.playlist_author,
-            songs: playlist.songs,
-          });
-
         const title = document.createElement("h2");
         title.textContent = playlist.playlist_name;
         titleWrapper.appendChild(title);
@@ -136,10 +127,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const likeCount = document.createElement("span");
         likeCount.className = "like-count";
-        likeCount.textContent = Math.floor(Math.random() * 500); // random like count
+        likeCount.textContent = Math.floor(Math.random() * 500);
         likeDiv.appendChild(likeCount);
 
-        likeDiv.onclick = () => {
+        likeDiv.onclick = (e) => {
+          e.stopPropagation();
           const liked = likeIcon.classList.toggle("fa-solid");
           likeIcon.classList.toggle("liked");
           likeIcon.classList.toggle("fa-regular");
@@ -147,10 +139,16 @@ document.addEventListener("DOMContentLoaded", () => {
           likeCount.textContent = liked ? count + 1 : count - 1;
         };
 
-        card.appendChild(img);
-        card.appendChild(titleWrapper);
-        card.appendChild(author);
-        card.appendChild(likeDiv);
+        card.append(img, titleWrapper, author, likeDiv);
+
+        card.onclick = () => {
+          openModal({
+            name: playlist.playlist_name,
+            imageUrl: img.src,
+            creatorName: playlist.playlist_author,
+            songs: playlist.songs,
+          });
+        };
 
         container.appendChild(card);
       });
