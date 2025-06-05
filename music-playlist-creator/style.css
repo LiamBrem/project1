@@ -115,6 +115,23 @@ body {
   transform: scale(1.05);
 }
 
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #888;
+}
+
+.delete-icon:hover {
+  color: #f00;
+  transform: scale(1.1);
+}
+
 .likes {
   display: flex;
   align-items: center;
@@ -127,6 +144,7 @@ body {
   font-size: 18px;
   transition: color 0.3s, transform 0.2s ease;
   color: #555;
+  cursor: pointer;
 }
 
 .likes:hover .like-icon {

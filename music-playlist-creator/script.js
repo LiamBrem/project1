@@ -113,95 +113,160 @@ document.addEventListener("DOMContentLoaded", () => {
     openAddModal();
   };
 
+  // add song handler - in add modal
+  const songList = document.getElementById("song-list");
+  const addSongButton = document.getElementById("add-song");
+
+  function addSongFields() {
+    const wrapper = document.createElement("div");
+    wrapper.className = "song-entry";
+    wrapper.innerHTML = `
+    <input type="text" class="song-title" placeholder="Title" required />
+    <input type="text" class="song-artist" placeholder="Artist" required />
+    <input type="text" class="song-album" placeholder="Album" required />
+    <input type="text" class="song-duration" placeholder="Duration (e.g., 3:45)" required />
+    <button type="button" class="remove-song">Remove</button>
+  `;
+
+    wrapper.querySelector(".remove-song").onclick = () => wrapper.remove();
+
+    songList.appendChild(wrapper);
+  }
+
+  // Initially show 1 song field
+  addSongFields();
+  addSongButton.addEventListener("click", addSongFields);
+
   // Loading Cards
   const container = document.getElementById("card-container");
 
   fetch("data/data.json")
-  .then((res) => res.json())
-  .then((data) => {
-    const playlists = data.playlists;
-    const container = document.getElementById("card-container");
-    const form = document.getElementById("add-playlist-form");
+    .then((res) => res.json())
+    .then((data) => {
+      const playlists = data.playlists;
+      const container = document.getElementById("card-container");
+      const form = document.getElementById("add-playlist-form");
 
-    function createPlaylistCard(playlist, imageUrl = null) {
-      const card = document.createElement("div");
-      card.className = "card";
+      function createPlaylistCard(playlist, imageUrl = null) {
+        const card = document.createElement("div");
+        card.className = "card";
 
-      const img = document.createElement("img");
-      img.src =
-        imageUrl || `https://picsum.photos/300/300?random=${Math.floor(Math.random() * 1000)}`;
-      img.alt = "Playlist Icon";
-      img.className = "card-icon";
+        const img = document.createElement("img");
+        img.src =
+          imageUrl ||
+          `https://picsum.photos/300/300?random=${Math.floor(
+            Math.random() * 1000
+          )}`;
+        img.alt = "Playlist Icon";
+        img.className = "card-icon";
 
-      const titleWrapper = document.createElement("div");
-      const title = document.createElement("h2");
-      title.textContent = playlist.playlist_name;
-      titleWrapper.appendChild(title);
+        const titleWrapper = document.createElement("div");
+        const title = document.createElement("h2");
+        title.textContent = playlist.playlist_name;
+        titleWrapper.appendChild(title);
 
-      const author = document.createElement("p");
-      author.textContent = playlist.playlist_author;
+        const author = document.createElement("p");
+        author.textContent = playlist.playlist_author;
 
-      const likeDiv = document.createElement("div");
-      likeDiv.className = "likes";
+        const likeDiv = document.createElement("div");
+        likeDiv.className = "likes";
 
-      const likeIcon = document.createElement("i");
-      likeIcon.className = "fa-regular fa-heart like-icon";
-      likeDiv.appendChild(likeIcon);
+        const likeIcon = document.createElement("i");
+        likeIcon.className = "fa-regular fa-heart like-icon";
+        likeDiv.appendChild(likeIcon);
 
-      const likeCount = document.createElement("span");
-      likeCount.className = "like-count";
-      likeCount.textContent = Math.floor(Math.random() * 500);
-      likeDiv.appendChild(likeCount);
+        const likeCount = document.createElement("span");
+        likeCount.className = "like-count";
+        likeCount.textContent = Math.floor(Math.random() * 500);
+        likeDiv.appendChild(likeCount);
 
-      likeDiv.onclick = (e) => {
-        e.stopPropagation();
-        const liked = likeIcon.classList.toggle("fa-solid");
-        likeIcon.classList.toggle("liked");
-        likeIcon.classList.toggle("fa-regular");
-        let count = parseInt(likeCount.textContent);
-        likeCount.textContent = liked ? count + 1 : count - 1;
-      };
+        likeDiv.onclick = (e) => {
+          e.stopPropagation();
+          const liked = likeIcon.classList.toggle("fa-solid");
+          likeIcon.classList.toggle("liked");
+          likeIcon.classList.toggle("fa-regular");
+          let count = parseInt(likeCount.textContent);
+          likeCount.textContent = liked ? count + 1 : count - 1;
+        };
 
-      card.onclick = () => {
-        openModal({
-          name: playlist.playlist_name,
-          imageUrl: img.src,
-          creatorName: playlist.playlist_author,
-          songs: playlist.songs,
-        });
-      };
+        const deleteDiv = document.createElement("div");
+        deleteDiv.className = "delete";
+        const deleteIcon = document.createElement("i");
+        deleteIcon.className = "fa-solid fa-trash delete-icon";
+        deleteDiv.appendChild(deleteIcon);
 
-      card.append(img, titleWrapper, author, likeDiv);
-      container.appendChild(card);
-    }
+        deleteDiv.onclick = (e) => {
+          e.stopPropagation();
+          if (confirm("Are you sure you want to delete this playlist?")) {
+            card.remove();
+            const index = playlists.findIndex(
+              (pl) => pl.playlistID === playlist.playlistID
+            );
+            if (index !== -1) {
+              playlists.splice(index, 1);
+            }
+            if (playlists.length === 0) {
+              container.innerHTML = "<p>No playlists available.</p>";
+            }
+          }
+        };
 
-    // form submission for new playlist
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
+        const cardActions = document.createElement("div");
+        cardActions.className = "card-actions";
+        cardActions.appendChild(likeDiv);
+        cardActions.appendChild(deleteDiv);
 
-      const title = document.getElementById("playlist-title").value.trim();
-      const author = document.getElementById("playlist-author").value.trim();
+        card.onclick = () => {
+          openModal({
+            name: playlist.playlist_name,
+            imageUrl: img.src,
+            creatorName: playlist.playlist_author,
+            songs: playlist.songs,
+          });
+        };
 
-      if (!title || !author) return;
+        card.append(img, titleWrapper, author, cardActions);
+        container.appendChild(card);
+      }
 
-      const newPlaylist = {
-        playlistID: `pl${(playlists.length + 1).toString().padStart(3, "0")}`,
-        playlist_name: title,
-        playlist_author: author,
-        songs: [],
-      };
+      // form submission for new playlist
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-      playlists.push(newPlaylist);
+        const title = document.getElementById("playlist-title").value.trim();
+        const author = document.getElementById("playlist-author").value.trim();
 
-      const imgSrc = `https://picsum.photos/300/300?random=${Math.floor(Math.random() * 1000)}`;
-      createPlaylistCard(newPlaylist, imgSrc);
+        if (!title || !author) return;
 
-      form.reset();
-      document.getElementById("add-modal").style.display = "none";
+        const songEntries = document.querySelectorAll(".song-entry");
+        const songs = Array.from(songEntries).map((entry) => ({
+          title: entry.querySelector(".song-title").value.trim(),
+          artist: entry.querySelector(".song-artist").value.trim(),
+          album: entry.querySelector(".song-album").value.trim(),
+          duration: entry.querySelector(".song-duration").value.trim(),
+        }));
+
+        const newPlaylist = {
+          playlistID: `pl${(playlists.length + 1).toString().padStart(3, "0")}`,
+          playlist_name: title,
+          playlist_author: author,
+          songs: songs,
+        };
+
+        playlists.push(newPlaylist);
+
+        const imgSrc = `https://picsum.photos/300/300?random=${Math.floor(
+          Math.random() * 1000
+        )}`;
+        createPlaylistCard(newPlaylist, imgSrc);
+
+        form.reset();
+        document.getElementById("add-modal").style.display = "none";
+      });
+
+      container.innerHTML = playlists.length
+        ? ""
+        : "<p>No playlists available.</p>";
+      playlists.forEach((playlist) => createPlaylistCard(playlist));
     });
-
-    container.innerHTML = playlists.length ? "" : "<p>No playlists available.</p>";
-    playlists.forEach((playlist) => createPlaylistCard(playlist));
-  });
-
 });
