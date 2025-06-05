@@ -36,12 +36,7 @@
             <button id="search-button">Search</button>
             <button id="clear-button">clear</button>
           </div>
-          <select name="sort" id="sort">
-            <option value="default">Default</option>
-            <option value="title">Title</option>
-            <option value="author">Author</option>
-            <option value="date">Duration</option>
-          </select>
+          <button id="add-button" class="fa fa-plus"></button>
         </div>
         <!-- Your main content here -->
         <div id="card-container"></div>
@@ -68,6 +63,20 @@
           <button id="shuffle">Shuffle</button>
         </div>
         <div id="Songs"></div>
+      </div>
+    </div>
+
+    <div id="add-modal" class="modal">
+      <div class="modal-content">
+        <span class="add-close">&times;</span>
+        <h1>Add New Playlist</h1>
+        <form id="add-playlist-form">
+          <label for="playlist-title">Playlist Title:</label>
+          <input type="text" id="playlist-title" required />
+          <label for="playlist-author">Author:</label>
+          <input type="text" id="playlist-author" required />
+          <button type="submit">Add Playlist</button>
+        </form>
       </div>
     </div>
 
