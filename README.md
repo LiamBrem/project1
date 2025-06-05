@@ -132,8 +132,9 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video actually renders and is playable when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
 
-[![Demo Video](https://img.youtube.com/vi/Sg42Nc8RruU/0.jpg)](https://www.youtube.com/watch?v=Sg42Nc8RruU)
-https://youtu.be/Sg42Nc8RruU
+[![Watch the video](https://raw.githubusercontent.com/liambrem/project1/main/assets/thumbnail.jpg)](https://raw.githubusercontent.com/liamberm/project1/video.mp4)
+
+
 
 ### Reflection
 
