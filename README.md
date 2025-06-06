@@ -132,30 +132,31 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video actually renders and is playable when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
 
-[![Watch the video](https://raw.githubusercontent.com/liambrem/project1/main/assets/thumbnail.jpg)](https://raw.githubusercontent.com/liamberm/project1/video.mp4)
-
-
+[![Demo Video](https://img.youtube.com/vi/Sg42Nc8RruU/0.jpg)](https://www.youtube.com/watch?v=Sg42Nc8RruU)
+https://youtu.be/Sg42Nc8RruU
 
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+Yes! I was already familiar with HTML, but haven't used much vanilla JavaScript. The DOM lessons really helped me remember how to interface with & dynamically change webpages. 
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-If I had more time, I definitely would have focused more on the styling. I prioritized completing some stretch goals over making the styling of the website more pristine. Had I had more time, I would have also looked to complete the other stretch goals. 
+If I had more time, I definitely would have focused more on the styling. I prioritized completing some stretch goals over making the styling of the website more pristine. Also with more time, I would have looked to complete the other stretch goals. 
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+The only gripe I have with my project demo is how long it took my to type in the information when adding the songs to the new playlist. 
 
 ### Open-source libraries used
 
 - Add any links to open-source libraries used in your project.
 [Font Awesome](https://fontawesome.com/)
+[Lorem Picsum](https://picsum.photos/)
 
 
 ### Shout out
 
 Shout out to Kyler helped me catch a typo that probably would have taken me 10 minutes to find ‼️
+And shout out to Terrance for showing me Lorem Picsum to randomly generate pictures for the website. 
