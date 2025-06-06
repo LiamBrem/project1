@@ -1,8 +1,8 @@
  ## Unit Assignment: Music Playlist Explorer
 
-Submitted by: **NAME**
+Submitted by: **Liam Brem**
 
-Estimated time spent: **6.5** hours spent in total
+Estimated time spent: **7.5** hours spent in total
 
 Deployed Application (**required**): [Music Playlist Explorer Deployed Site](https://project1-49wf.onrender.com/)
 
@@ -130,10 +130,10 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 ### Walkthrough Video
 
-<a href="https://www.loom.com/share/f479db69046b464ca2c423e834f6e41c?sid=82477b7f-a0a6-4da7-80b5-985bdf99eea3">
-   <p>Project video title</p>
-   <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f479db69046b464ca2c423e834f6e41c?sid=82477b7f-a0a6-4da7-80b5-985bdf99eea3-with-play.gif">
-</a>
+[VIDEO HERE](https://www.loom.com/share/f479db69046b464ca2c423e834f6e41c?sid=82477b7f-a0a6-4da7-80b5-985bdf99eea3)
+
+https://www.loom.com/share/f479db69046b464ca2c423e834f6e41c?sid=82477b7f-a0a6-4da7-80b5-985bdf99eea3
+
 
 ### Reflection
 
@@ -158,5 +158,5 @@ The only gripe I have with my project demo is how long it took my to type in the
 
 ### Shout out
 
-Shout out to Keiler helped me catch a typo that probably would have taken me 10 minutes to find ‼️
+Shout out to Kailer helped me catch a typo that probably would have taken me 10 minutes to find ‼️
 And shout out to Terrance for showing me Lorem Picsum to randomly generate pictures for the website. 
