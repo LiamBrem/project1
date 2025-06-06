@@ -130,10 +130,6 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 ### Walkthrough Video
 
-[VIDEO HERE](https://www.youtube.com/watch?v=Sg42Nc8RruU)
-
-https://www.loom.com/share/f479db69046b464ca2c423e834f6e41c?sid=82477b7f-a0a6-4da7-80b5-985bdf99eea3
-
 <a href="https://www.loom.com/share/f479db69046b464ca2c423e834f6e41c?sid=82477b7f-a0a6-4da7-80b5-985bdf99eea3">
    <p>Project video title</p>
    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f479db69046b464ca2c423e834f6e41c?sid=82477b7f-a0a6-4da7-80b5-985bdf99eea3-with-play.gif">
@@ -156,8 +152,8 @@ The only gripe I have with my project demo is how long it took my to type in the
 ### Open-source libraries used
 
 - Add any links to open-source libraries used in your project.
-[Font Awesome](https://fontawesome.com/)
-[Lorem Picsum](https://picsum.photos/)
+* [Font Awesome](https://fontawesome.com/)
+* [Lorem Picsum](https://picsum.photos/)
 
 
 ### Shout out
