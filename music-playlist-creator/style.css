@@ -52,6 +52,12 @@ body {
   margin: 10px 0;
 }
 
+.second-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .header {
   background-color: #bdbdbd;
   color: rgb(0, 0, 0);
@@ -69,6 +75,28 @@ body {
   align-items: center;
   gap: 20px;
   margin-left: auto;
+}
+
+.right-nav a {
+  background-color: #535353;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+#sort-select {
+  background-color: #535353;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-right: 8px;
+  cursor: pointer;
 }
 
 .main-content {

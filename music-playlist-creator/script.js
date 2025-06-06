@@ -45,7 +45,7 @@ function shuffleList(list) {
   return list;
 }
 
-// Add new modal
+// add new modal
 
 function openAddModal() {
   const addModal = document.getElementById("add-modal");
@@ -59,7 +59,7 @@ function openAddModal() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Like Button
+  // like Button
   document.querySelectorAll(".likes").forEach((likeSection) => {
     likeSection.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Search
+  // search
   const searchInput = document.getElementById("search-input");
   const searchButton = document.getElementById("search-button");
   const clearSearchButton = document.getElementById("clear-button");
@@ -133,11 +133,11 @@ document.addEventListener("DOMContentLoaded", () => {
     songList.appendChild(wrapper);
   }
 
-  // Initially show 1 song field
+  // show 1 song to start
   addSongFields();
   addSongButton.addEventListener("click", addSongFields);
 
-  // Loading Cards
+  // load cards from json
   const container = document.getElementById("card-container");
 
   fetch("data/data.json")
@@ -181,8 +181,9 @@ document.addEventListener("DOMContentLoaded", () => {
         likeDiv.appendChild(likeIcon);
 
         const likeCount = document.createElement("span");
+        const numberOfLikes = playlist.likes;
         likeCount.className = "like-count";
-        likeCount.textContent = Math.floor(Math.random() * 15);
+        likeCount.textContent = numberOfLikes || "0"; // shows 0 for new playlists added
         likeDiv.appendChild(likeCount);
 
         likeDiv.onclick = (e) => {
@@ -234,34 +235,55 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(card);
       }
 
+      function renderCards(list) {
+        container.innerHTML = list.length
+          ? ""
+          : "<p> No playlists available.</p>";
+        list.forEach((playlist) => createPlaylistCard(playlist));
+      }
+
+      renderCards(playlists);
+
+      document.getElementById("sort-select").addEventListener("change", (e) => {
+        let sorted = [...playlists]; // creates a shallow copy
+        if (e.target.value === "name") {
+          sorted.sort((a, b) => a.playlist_name.localeCompare(b.playlist_name));
+        } else if (e.target.value === "likes") {
+          sorted.sort((a, b) => (b.likes || 0) - (a.likes || 0));
+        } else if (e.target.value === "date") {
+          sorted.sort((a, b) => new Date(b.dateAdded || b.dataAdded || 0) - new Date(a.dateAdded || a.dataAdded || 0));
+        }
+        renderCards(sorted);
+      });
+
       // form submission for new playlist
       form.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        const title = document.getElementById("playlist-title").value.trim();
-        const author = document.getElementById("playlist-author").value.trim();
-        const image = document.getElementById("image-url").value.trim();
-
-        if (!title || !author) return;
+        const title = document.getElementById("playlist-title").value;
+        const author = document.getElementById("playlist-author").value;
+        const image = document.getElementById("image-url").value; // unused
+        const date = new Date().toISOString();
 
         const songEntries = document.querySelectorAll(".song-entry");
         const songs = Array.from(songEntries).map((entry) => ({
-          title: entry.querySelector(".song-title").value.trim(),
-          artist: entry.querySelector(".song-artist").value.trim(),
-          album: entry.querySelector(".song-album").value.trim(),
-          duration: entry.querySelector(".song-duration").value.trim(),
+          title: entry.querySelector(".song-title").value,
+          artist: entry.querySelector(".song-artist").value,
+          album: entry.querySelector(".song-album").value,
+          duration: entry.querySelector(".song-duration").value,
         }));
 
         const newPlaylist = {
-          playlistID: `pl${(playlists.length + 1).toString().padStart(3, "0")}`,
+          playlistID: `pl${(playlists.length + 1)}`,
           playlist_name: title,
           playlist_author: author,
           songs: songs,
+          dataAdded: date,
         };
 
         playlists.push(newPlaylist);
 
-        const imgSrc = `https://picsum.photos/300/300?random=${Math.floor(
+        const imgSrc = `https://picsum.photos/200/200?random=${Math.floor(
           Math.random() * 1000
         )}`;
         createPlaylistCard(newPlaylist, imgSrc);

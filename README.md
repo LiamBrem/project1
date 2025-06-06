@@ -85,7 +85,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
   - [x] The resulting playlist should display in the grid view.
   - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself adding at least two songs to the playlist. 
 
-- [ ] Playlists**
+- [ ] **Edit Playlists**
   - [ ] Enable users to modify the details of existing playlists.
   - [ ] Add an edit button to each playlist tile.
   - [ ] Users can update the playlist:
@@ -121,12 +121,12 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
       - [x] If users can delete a playlist, deleted playlists should no longer be included in search results.
       - **Note:** You will not be graded on the implementation of this optional subfeature to keep your grade of this stretch feature independent of your implementation of other stretch features. However, we highly suggest including this in your implementation to model realistic behavior of real applications. 
 
-- [ ] **Sorting Options**
-  - [ ] Implement a drop-down or button options that allow users to sort the playlist by:
-    - [ ] Name (A-Z alphabetically)
-    - [ ] Number of likes (descending order)
-    - [ ] Date added (most recent to oldest, chronologically)
-  - [ ] Selecting a sort option should result in a reordering based on the selected sort while maintaining a grid view.
+- [x] **Sorting Options**
+  - [x] Implement a drop-down or button options that allow users to sort the playlist by:
+    - [x] Name (A-Z alphabetically)
+    - [x] Number of likes (descending order)
+    - [x] Date added (most recent to oldest, chronologically)
+  - [x] Selecting a sort option should result in a reordering based on the selected sort while maintaining a grid view.
 
 ### Walkthrough Video
 
@@ -158,5 +158,7 @@ The only gripe I have with my project demo is how long it took my to type in the
 
 ### Shout out
 
-Shout out to Kailer helped me catch a typo that probably would have taken me 10 minutes to find ‼️
-And shout out to Terrance for showing me Lorem Picsum to randomly generate pictures for the website. 
+Shout out to:
+* Kailer helped me catch a typo that probably would have taken me 10 minutes to find ‼️
+* Ben Cuff (from another cohort) for teaching me about "stopPropagation"
+* And Terrance for showing me Lorem Picsum to randomly generate pictures for the website. 
