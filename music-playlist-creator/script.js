@@ -154,11 +154,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = document.createElement("img");
         img.src =
           imageUrl ||
-          `https://picsum.photos/300/300?random=${Math.floor(
+          `https://picsum.photos/200/200?random=${Math.floor(
             Math.random() * 1000
           )}`;
         img.alt = "Playlist Icon";
         img.className = "card-icon";
+
+        img.onerror = () => {
+          img.onerror = null;
+          img.src = "default.jpg";
+        };
 
         const titleWrapper = document.createElement("div");
         const title = document.createElement("h2");
