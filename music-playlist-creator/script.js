@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const likeCount = document.createElement("span");
         likeCount.className = "like-count";
-        likeCount.textContent = Math.floor(Math.random() * 500);
+        likeCount.textContent = Math.floor(Math.random() * 15);
         likeDiv.appendChild(likeCount);
 
         likeDiv.onclick = (e) => {
