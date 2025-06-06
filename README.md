@@ -2,7 +2,7 @@
 
 Submitted by: **Liam Brem**
 
-Estimated time spent: **7.5** hours spent in total
+Estimated time spent: **8.5** hours spent in total
 
 Deployed Application (**required**): [Music Playlist Explorer Deployed Site](https://project1-49wf.onrender.com/)
 
@@ -130,9 +130,9 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 ### Walkthrough Video
 
-[VIDEO HERE](https://www.loom.com/share/f479db69046b464ca2c423e834f6e41c?sid=82477b7f-a0a6-4da7-80b5-985bdf99eea3)
+[VIDEO HERE](https://www.loom.com/share/f4d8cec009c14990a78b2271ee2a3de4?sid=b8b3631b-e4b2-4327-97d5-4ca078547280)
 
-https://www.loom.com/share/f479db69046b464ca2c423e834f6e41c?sid=82477b7f-a0a6-4da7-80b5-985bdf99eea3
+https://www.loom.com/share/f4d8cec009c14990a78b2271ee2a3de4?sid=b8b3631b-e4b2-4327-97d5-4ca078547280
 
 
 ### Reflection
@@ -143,7 +143,7 @@ Yes! I was already familiar with HTML, but haven't used much vanilla JavaScript.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-If I had more time, I definitely would have focused more on the styling. I prioritized completing some stretch goals over making the styling of the website more pristine. Also with more time, I would have looked to complete the other stretch goals. 
+If I had more time, I definitely would have focused more on the styling. I prioritized completing some stretch goals over making the styling of the website more pristine. Also with more time, I would have looked to complete the final stretch goal. 
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
